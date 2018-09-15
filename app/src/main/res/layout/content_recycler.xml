@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/averagetableprototype" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/emotion_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/publishDb"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Display in Graph"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/publishDisk"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Export Records" />
+
+
+
+        <Button
+
+            android:id="@+id/publishMD"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Send Records" />
+
+    </LinearLayout>
+
+</LinearLayout>

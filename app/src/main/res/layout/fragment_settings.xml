@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.servicequalityrater.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text ="Set Minimum Detection Limiter"
+        android:id="@+id/textholder"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+    <RadioButton
+        android:id="@+id/button10minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 minutes"
+        android:layout_below="@id/textholder"
+        android:layout_centerHorizontal="true"/>
+    <RadioButton
+        android:id="@+id/button30minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 minutes"
+        android:layout_below="@+id/button10minutes"
+        android:layout_centerHorizontal="true"/>
+    <RadioButton
+    android:id="@+id/button60minutes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="60 minutes"
+        android:layout_below="@+id/button30minutes"
+        android:layout_centerHorizontal="true"/>
+
+    <RadioButton
+        android:id="@+id/button4hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 hours"
+        android:layout_below="@+id/button60minutes"
+        android:layout_centerHorizontal="true"/>
+    <RadioButton
+        android:id="@+id/button12hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 hours"
+        android:layout_below="@+id/button4hours"
+        android:layout_centerHorizontal="true"/>
+    <RadioButton
+        android:id="@+id/button24hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 hours"
+        android:layout_below="@+id/button12hours"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id ="@+id/buttonOK"
+        android:layout_below="@+id/button24hours"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

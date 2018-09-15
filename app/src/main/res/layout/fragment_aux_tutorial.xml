@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xu.servicequalityrater.AuxTutorialFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Automatic Analysis Active"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Veritas will continue operating in the background. Please use your device as normal.\n\nIf you wish to view or send off your records, please re-open the application and click 'View Records' " />
+
+</RelativeLayout>

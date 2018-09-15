@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+<SurfaceView android:layout_width="1dp" android:layout_height="1dp"
+    android:id="@+id/surfaceView" />
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp" android:weightSum="1.0">
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/surfaceView"
+
+
+        android:gravity="right"
+        android:background="@android:color/transparent"
+        android:cursorVisible="false"
+        android:text= "Name:"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonCaptureImage"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Test Analysis" />
+
+        <Button
+            android:id="@+id/buttonViewResults"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="View Records" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Clear Records" />
+
+        <Button
+            android:id="@+id/syncAlarm"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="Toggle Automatic Analysis" />
+    </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/selectedImage"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toEndOf="@+id/image_control"
+            android:layout_toRightOf="@+id/image_control"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/editTextResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+
+            android:layout_weight="1.0"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="Welcome to Veritas's manual mode. \n\nThis interface is designed to allow you to test how Veritas performs its analysis, with a live display of the results. To enable automatic mode, simply exit the application (App must be allowed to run in the background). The default limit is one image every 10 minutes. \n\nCapture your subject to begin. " />
+    </ScrollView>
+</LinearLayout>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.03"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"></LinearLayout>
+
+
+
+
+</RelativeLayout>
+

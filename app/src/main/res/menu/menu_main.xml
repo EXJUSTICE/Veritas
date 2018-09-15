@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.xu.ServiceQualityRater.CameraActivity">
+
+    <item android:id="@+id/action_instructions"
+        android:orderInCategory="99"
+        android:title="Instructions"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_profile"
+        android:orderInCategory="98"
+        android:title="Set Profile"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+
+</menu>

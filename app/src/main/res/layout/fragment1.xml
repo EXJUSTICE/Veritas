@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Veritas"
+        android:layout_marginTop="45dp"
+        android:textSize="30dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Veritas is the first emotion recognition-based mobile app designed to quantify mental health in individuals.\n\nBy default, the app collects data in the background without user interaction. Go ahead and use your device as usual.\n\nTo ensure functionality, please ensure that you are connected to a network and that Veritas is allowed to run in the background in your device’s power or battery saver settings. Please run Veritas once everytime you turn on your device.\n\nThe following tutorial will guide you to access all of Veritas's capabilities"
+
+        android:textSize="16dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
